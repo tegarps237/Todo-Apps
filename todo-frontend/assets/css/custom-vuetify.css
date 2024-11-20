@@ -1,0 +1,10 @@
+.v-application {
+    font-family: "Montserrat", sans-serif;
+    background: #121212 !important;
+}
+
+@media (min-width: 1280px) {
+    .v-container {
+        max-width: 1200px !important;
+    }
+}

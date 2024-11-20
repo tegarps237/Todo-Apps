@@ -1,0 +1,16 @@
+version: '3'
+services:
+  nuxt-app:
+    container_name: todo-apps
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      # Add any other environment variables you need
+    volumes:
+      - .:/app
+    # Restart the service on failure
+    restart: on-failure
